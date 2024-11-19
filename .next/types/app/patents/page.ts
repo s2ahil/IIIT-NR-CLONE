@@ -1,4 +1,4 @@
-// File: E:\imp files\IIITNR WEBISTE\Nextjs-tailwind-js\app\patents\page.js
+// File: D:\my\IIIT-NR-CLONE\app\patents\page.js
 import * as entry from '../../../../app/patents/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

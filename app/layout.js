@@ -1,9 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = { 
+export const metadata = {
   title: "IIIT NAYA RAIPUR CLONE WEBSITE",
   description: "clone Website for college students of iiitnr ()  ",
 };
@@ -11,7 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <Navbar />
+        </header>
+        <div className="max-w-screen-xl mx-auto">{children}</div>
+        <footer></footer>
+      </body>
     </html>
   );
 }

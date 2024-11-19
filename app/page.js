@@ -1,9 +1,7 @@
-import Image from "next/image";
-import Navbar from "@/components/Navbar"
-export default function Home() {
-  return (
-    <main className=" ">
-   <Navbar></Navbar>
-    </main>
-  );
-}
+import React from "react";
+
+const Home = () => {
+  return <div>home</div>;
+};
+
+export default Home;
