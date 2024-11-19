@@ -1,1 +1,2 @@
-# Nextjs-tailwind-js
+# IIIT-NR-CLONE
+IIITNR WEBSITE FOR SEO
