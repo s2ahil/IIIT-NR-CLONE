@@ -506,12 +506,27 @@ video {
   white-space: nowrap;
   border-width: 0;
 }
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-28 {
+  margin-bottom: 7rem;
 }
 .block {
   display: block;
@@ -542,6 +557,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-screen {
+  width: 100vw;
 }
 .max-w-\[1550px\] {
   max-width: 1550px;
@@ -617,6 +635,48 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.pt-28 {
+  padding-top: 7rem;
+}
+.pt-24 {
+  padding-top: 6rem;
+}
+.pt-16 {
+  padding-top: 4rem;
+}
+.pt-20 {
+  padding-top: 5rem;
+}
+.pt-\[200px\] {
+  padding-top: 200px;
+}
+.pt-\[100\] {
+  padding-top: 100;
+}
+.pt-\[110px\] {
+  padding-top: 110px;
+}
+.pt-\[50px\] {
+  padding-top: 50px;
+}
+.pt-\[70px\] {
+  padding-top: 70px;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -738,6 +798,15 @@ body {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
   }
 
   .md\:text-blue-700 {
