@@ -4,8 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Devs Nest",
-  description: "Website to post your blog ",
+  title: "IIIT NAYA RAIPUR",
+  description: "Website for college students of iiitnr  ",
 };
 
 export default function RootLayout({ children }) {
