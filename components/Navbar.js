@@ -6,11 +6,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "/home", isActive: true },
-    { name: "Patents", href: "/patents" },
+    { name: "Home", href: "/", isActive: true },
     { name: "About", href: "/about" },
     { name: "Curriculum", href: "/curriculum" },
-    { name: "Contact", href: "#" },
+    { name: "T&P Cell", href: "/tnp" },
+    { name: "Patents", href: "/patents" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const toggleNavbar = () => {
