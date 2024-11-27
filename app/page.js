@@ -8,7 +8,7 @@ const Home = () => {
 
     <div className="bg-red-400 w-full">
 
-      <Image src={HeadingWebsite} className="w-full h-full"></Image>
+      <Image src={HeadingWebsite} className="h-[3rem]  md:h-full"></Image>
     </div>
 
     <div className="flex items-center flex-col p-3">
@@ -16,7 +16,7 @@ const Home = () => {
 
       <p>- Best college for your students</p>
 
-      <div className="bg-green-400 w-full">  <Image src={IIITNR} className="h-[30rem] " ></Image></div>
+      <div className=" w-full flex items-center justify-center">  <Image src={IIITNR} className=" h-fit  md:h-[30rem] " alt="IIIT NR BUILDING"></Image></div>
     
 
     </div>

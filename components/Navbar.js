@@ -24,11 +24,11 @@ const Navbar = () => {
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJiGTSMVoPC-Bcqpx-pLRu4xVWvJs5nwIvQ&s"
-            className="h-8"
+            className="h-9"
             alt="IIIT NR WEBSITE"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            <span className="text-blue-700">IIIT NR</span> website
+            <span className="text-blue-700">IIIT NR</span> WEBSITE
           </span>
         </a>
         <button
