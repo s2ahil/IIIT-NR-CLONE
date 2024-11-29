@@ -6,76 +6,71 @@ import Image from "next/image";
 const About = () => {
   return (
     <div>
+      {/* Main Content Section */}
+      <div className="w-full px-8 py-6">
+        <h2 className="text-3xl font-semibold text-green-700 mb-4">
+          Why You'll Love IIIT NR
+        </h2>
 
+        {/* Academics Section */}
+        <h3 className="text-2xl font-bold text-gray-800 mt-4 mb-2">Dynamic Academics</h3>
+        <ul className="list-disc list-inside text-gray-700">
+          <li>Experience hands-on engineering from day one at IIIT NR.</li>
+          <li>A unique skill-first approach with practical projects embedded in every semester.</li>
+          <li>Cutting-edge modular courses tailored for future technologies.</li>
+          <li>
+            An innovative 'T'-Education model ensures a blend of depth and breadth in knowledge.
+          </li>
+          <li>
+            Gain expertise in both hardware and software using diverse tools and technologies.
+          </li>
+          <li>Engage in multiple mini-projects leading up to a final major project in the 8th semester.</li>
+          <li>
+            Choose from interdisciplinary electives for an all-rounded academic journey.
+          </li>
+          <li>
+            Strong industry connections provide unmatched internship and elective opportunities.
+          </li>
+        </ul>
 
-    
-        {/* Main Content Section */}
-        <div className="bg-green-100 w-full px-8 py-6">
-          <h2 className="text-3xl font-semibold text-green-700 mb-4">Why One Should Join IIIT-NR</h2>
+        {/* Research Section */}
+        <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">Advanced Research Labs</h3>
+        <p className="text-gray-700">
+          Discover the future at IIIT NR with state-of-the-art labs in Data Science, AI, IoT, and more.
+        </p>
 
-          {/* Academics Section */}
-          <h3 className="text-2xl font-bold text-gray-800 mt-4 mb-2">Innovative Academics</h3>
-          <ul className="list-disc list-inside text-gray-700">
-            <li>Core engineering courses from the first semester.</li>
-            <li>Skill-first, theory-later approach with integrated projects.</li>
-            <li>Fractal academics with modular courses for modern technologies.</li>
-            <li>
-              'T'-Education model for balanced breadth and depth of knowledge.
-            </li>
-            <li>
-              Balanced exposure to hardware and software with diverse tools.
-            </li>
-            <li>Four mini-projects (4th–7th semesters) and one major project (8th semester).</li>
-            <li>
-              Elective subjects and interdisciplinary projects for holistic learning.
-            </li>
-            <li>
-              Strong industry linkages for internships and industry electives.
-            </li>
-          </ul>
+        {/* Semester Abroad Section */}
+        <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">
+          Semester Abroad Experiences
+        </h3>
+        <p className="text-gray-700">
+          Love the global exposure IIIT NR offers, with financial support of up to ₹5 Lakhs for international projects.
+        </p>
 
-          {/* Research Section */}
-          <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">State-of-the-Art Research Labs</h3>
-          <p className="text-gray-700">
-            IIIT-NR has cutting-edge labs such as Data Science, VLSI & Embedded Systems, AI & Deep Learning, IoT & Sensors, and more.
-          </p>
+        {/* Research & Innovation */}
+        <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">
+          Fueling Research & Innovation
+        </h3>
+        <p className="text-gray-700">
+          IIIT NR nurtures innovation with grants for research publications, conferences, and prototype development.
+        </p>
 
-          {/* Semester Abroad Section */}
-          <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">
-            Semester Abroad Opportunities
-          </h3>
-          <p className="text-gray-700">
-            Offers financial grants up to ₹5 Lakhs for 20 students per batch to pursue final semester projects at reputed foreign institutions.
-          </p>
+        {/* Personality Development */}
+        <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">
+          Holistic Personality Growth
+        </h3>
+        <p className="text-gray-700">
+          Become a leader at IIIT NR through workshops, club activities, and teamwork-focused events.
+        </p>
 
-          {/* Research & Innovation */}
-          <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">
-            Research & Innovation
-          </h3>
-          <p className="text-gray-700">
-            Provides financial support for publishing research, participating in conferences, and creating prototypes.
-          </p>
-
-          {/* Personality Development */}
-          <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">
-            Overall Personality Development
-          </h3>
-          <p className="text-gray-700">
-            Focused on leadership, teamwork, and communication skills through workshops, clubs, and events.
-          </p>
-
-          {/* Extracurricular Activities */}
-          <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">
-            Extracurricular Activities
-          </h3>
-          <p className="text-gray-700">
-            Financial support up to ₹10,000 for participating in extracurricular competitions. State-of-the-art facilities for sports and cultural events.
-          </p>
-        </div>
-
-       
-    
-      
+        {/* Extracurricular Activities */}
+        <h3 className="text-2xl font-bold text-gray-800 mt-6 mb-2">
+          Unmatched Extracurriculars
+        </h3>
+        <p className="text-gray-700">
+          From sports to cultural events, IIIT NR supports your passions with financial aid and state-of-the-art facilities.
+        </p>
+      </div>
     </div>
   );
 };
