@@ -1,3 +1,12 @@
 {
+<<<<<<< HEAD
   "/page": "app/page.js"
+=======
+  "/about/page": "app/about/page.js",
+  "/tnp/page": "app/tnp/page.js",
+  "/patents/page": "app/patents/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js",
+  "/curriculum/page": "app/curriculum/page.js"
+>>>>>>> b2e9aead5385c2c1233eaff78e4bf1382442295e
 }

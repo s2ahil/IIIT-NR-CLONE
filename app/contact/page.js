@@ -11,6 +11,7 @@ const Contact = () => {
       <h1 className="mb-6 text-3xl font-bold text-center text-gray-800">
         Contact Us
       </h1>
+      <h2 className="text-xl">We Love IIIT naya raipur</h2>
       <div className="pt-4 space-y-4">
         <div>
           <h2 className="text-2xl font-semibold text-gray-700">Address:</h2>

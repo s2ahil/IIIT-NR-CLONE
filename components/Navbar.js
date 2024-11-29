@@ -2,11 +2,14 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // Import usePathname to track the current route
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); // Get the current pathname
 
   const navLinks = [
-    { name: "Home", href: "/", isActive: true },
+    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Curriculum", href: "/curriculum" },
     { name: "T&P Cell", href: "/tnp" },
@@ -65,11 +68,11 @@ const Navbar = () => {
                 <Link
                   href={link.href}
                   className={`block py-2 px-3 rounded md:p-0 ${
-                    link.isActive
+                    pathname === link.href
                       ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
                       : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   }`}
-                  aria-current={link.isActive ? "page" : undefined}
+                  aria-current={pathname === link.href ? "page" : undefined}
                   onClick={() => setIsOpen(false)} // Close mobile menu on link click
                 >
                   {link.name}
