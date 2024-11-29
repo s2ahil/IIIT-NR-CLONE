@@ -9,7 +9,7 @@ const About = () => {
       {/* Main Content Section */}
       <div className="w-full px-8 py-6">
         <h2 className="text-3xl font-semibold text-green-700 mb-4">
-          Why You'll Love IIIT NR
+          Why You'll Love IIIT Naya Raipur
         </h2>
 
         {/* Academics Section */}
