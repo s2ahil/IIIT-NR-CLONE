@@ -1,155 +1,110 @@
-import React from "react";
+import React, { Suspense } from "react";
 import amit from "@/assets/images/jpg/tnp/amit.jpg";
-
 import Image from "next/image";
+import Loading from "../loading";
+
+export const metadata = {
+  title: "Training and Placement - IIIT Naya Raipur",
+  description:
+    "Explore the Training and Placement activities at DSPM IIIT Naya Raipur. Learn about the T&P cell, its initiatives, and how it empowers students for successful careers.",
+  keywords:
+    "Training and Placement, IIIT Naya Raipur, T&P cell, Career Cell, Student Internships, Campus Placements",
+};
 
 const TNP = () => {
   return (
-    <div>
-      <div className="inline-block mt-8">
-        <h1 className="text-3xl font-bold">Training and Placement</h1>
-        <hr className="" />
-      </div>
+    <main className="px-6 py-10 bg-gray-50">
+      <section className="max-w-6xl mx-auto">
+        {/* Page Title */}
+        <div className="mb-8 text-center">
+          <h1 className="text-4xl font-bold text-gray-900">
+            Training and Placement
+          </h1>
+          <p className="mt-2 text-lg text-gray-600">
+            Empowering students with skills and opportunities for a successful
+            career.
+          </p>
+          <hr className="mt-4 border-gray-300" />
+        </div>
 
-      <div className="flex flex-col justify-between mx-auto max-w-[800px] md:flex-row border-2 p-6">
-        <Image
-          src={amit}
-          width={150}
-          height={150}
-          className="mx-auto md:mx-0"
-          alt="Amit's profile"
-        />
-        <div className="mx-auto my-auto mt-4 md:mt-0 md:mx-0">
-          <p className="font-semibold">Amit Kumar Agrawal</p>
-          <p className="mb-4">Incharge- training and career Cell</p>
-          <p>
-            <span className="font-semibold">E-mail:</span> amitag@iiitnr.edu.in
-          </p>
-        </div>
-      </div>
+        {/* T&P Incharge Details */}
+        <Suspense fallback={<Loading />}>
+          <div className="flex flex-col items-center max-w-4xl p-6 mx-auto mb-12 bg-white rounded-lg shadow-md md:flex-row">
+            <Image
+              src={amit}
+              width={150}
+              height={150}
+              className="border-4 border-gray-300 rounded-full"
+              alt="Amit Kumar Agrawal Profile"
+            />
+            <div className="mt-4 text-center md:mt-0 md:ml-6 md:text-left">
+              <h2 className="text-2xl font-semibold text-gray-800">
+                Amit Kumar Agrawal
+              </h2>
+              <p className="text-gray-700">
+                Incharge - Training and Career Cell
+              </p>
+              <p className="mt-2">
+                <span className="font-semibold text-gray-800">Email:</span>{" "}
+                <a
+                  href="mailto:amitag@iiitnr.edu.in"
+                  className="text-blue-600 underline hover:text-blue-800"
+                >
+                  amitag@iiitnr.edu.in
+                </a>
+              </p>
+            </div>
+          </div>
+        </Suspense>
 
-      <div className="mt-4">
-        <div className="inline-block">
-          <h2 className="text-2xl font-semibold">What do we do?</h2>
-          <hr />
-        </div>
-        <p className="mt-6 text-justify ">
-          The Training & Placement Office at DSPM IIIT-Naya Raipur is worried
-          about every single activity which lets the students learn and grow
-          outside of the campus of the Institute. At one hand it teams with the
-          leading organisations and institutes for the purpose of establishing
-          an internship and a training programme for the students, whereas at
-          the other end, it enables the placement of those students passing out
-          from the Institute. The office liaises with prospective recruiters
-          such as industrial establishments and corporate houses which conduct
-          campus interviews and select students from both disciplines. It
-          provides infra-structural facilities to conduct group discussions,
-          tests, and interviews and other logistics required for the same. The
-          Training and Placement Cell of DSPM IIIT-Naya Raipur strives to get
-          every student trained in the Institute placed in an organization of
-          his or her liking and pursue their passion. To achieve this goal, this
-          office focuses not only on academic skills but also on physical,
-          behavioral, and societal skills required to be a team player in the
-          organization. We nurture our students for four years to develop their
-          all-round abilities so that when they land up in the competitive
-          world, they do not lag behind.
-        </p>
-        <p className="mt-5 ">
-          The Training and Placement Cell of DSPM IIIT-Naya Raipur strives to
-          get every student trained in the Institute placed in an organization
-          of his or her liking and pursue their passion. To achieve this goal,
-          this office focusses not only on academic skills but also on physical,
-          behavioral and societal skills required to be a team player in the
-          organization. For four years, we nurture our students to develop their
-          all round abilities so as when they land up in the competitive world,
-          they do not lag behind.
-        </p>
-      </div>
-      {/* <div className="mt-4">
-        <div className="inline-block">
-          <h2 className="text-2xl font-semibold">Why IIIT</h2>
-          <hr />
-        </div>
-        <p className="mt-6 text-justify ">
-          Admission into the B. Tech programs of DSPM-IIIT Naya Raipur takes
-          place through the Joint Entrance Examination (Main). Salient Features
-          of Academic Curriculum:-
-        </p>
-        <li className="mt-2 font-semibold text-justify ">
-          Basic Motto: Skill First, Theory later, Project integrated
-        </li>
-        <li className="mt-2 font-semibold text-justify ">
-          Run with Fractal Academic concept, similar to IIT Hyderabad.
-        </li>
-        <li className="mt-2 font-semibold text-justify">
-          Common syllabus for both CSE, ECE upto 4 semesters
-        </li>
-        <li className="mt-2 font-semibold text-justify">
-          Project in every semester from 5th Semester.
-        </li>
-        <li className="mt-2 font-semibold text-justify">
-          Eighth (8) semester dedicated for project work only.
-        </li>
-      </div> */}
-      {/* 
-      <div className="mt-4">
-        <div className="inline-block">
-          <h2 className="text-2xl font-semibold">Academic Training</h2>
-          <hr />
-        </div>
-        <div className="mt-6 ">
-          <h3 className="text-xl font-semibold">Skill first</h3>
-          <p className="mt-2 text-justify ">
-            DSPM IIIT-Naya Raipur follows an innovative academic structure
-            pioneered and first implemented by IIT-Hyderabad of fractal
-            academics. This is considered as the first step towards experiential
-            learning. At the center of Fractal Academics is the concept of
-            T-concept of education – Breadth first and Depth next. A very
-            similar concept is also being followed by IIT-Bhilai.
+        {/* What Do We Do Section */}
+        <div className="mb-12">
+          <h2 className="mb-4 text-3xl font-bold text-gray-900">
+            What Do We Do?
+          </h2>
+          <p className="text-lg leading-8 text-gray-700">
+            The Training & Placement Office at DSPM IIIT-Naya Raipur is
+            dedicated to bridging the gap between academic learning and
+            professional growth. Our office collaborates with leading
+            organizations and institutes to offer internships and training
+            programs, while also facilitating placements for students in
+            esteemed companies.
           </p>
-          <li className="mt-2 font-semibold text-justify ">
-            Under this ‘T’ concept, course content is divided into two parts
-            which require separate training. One part deals with the breadth of
-            the topics and the other deals with depth of the concepts
-          </li>
-          <li className="mt-2 font-semibold text-justify">
-            There can be more segments under each part dealing with either
-            breadth or depth. Each segment is considered a fraction, thus it is
-            said to be fractalized (divided) into various segments with 1 or 2
-            credits.
-          </li>
-          <li className="mt-2 font-semibold text-justify">
-            Breadth courses are the basic building block for the depth courses.
-          </li>
-          <li className="mt-2 font-semibold text-justify">
-            The fundamental idea is to atomize credits so as to enable the
-            students to get a breadth of knowledge in more number of courses,
-            however, deeper knowledge in the courses of their choice.
-          </li>
-          <li className="mt-2 font-semibold text-justify">
-            Breadth courses are taught for first two years followed by depth
-            courses for the remaining two years.
-          </li>
-        </div>
-        <div className="mt-6 ">
-          <h3 className="text-xl font-semibold">Theory Next</h3>
-          <p className="mt-2 text-justify ">
-            Depth courses are built on the foundation set by the breadth courses
-            and are of 2 credits or more. Normally these are offered as elective
-            courses. A student interested in pursuing a particular knowledge
-            domain may opt for these courses.
+          <p className="mt-6 text-lg leading-8 text-gray-700">
+            From organizing campus interviews to nurturing students with
+            physical, behavioral, and societal skills, the T&P cell ensures
+            holistic development. The ultimate goal is to prepare our students
+            for the competitive world by developing their all-round abilities,
+            empowering them to achieve their career aspirations.
           </p>
         </div>
-        <div className="my-6 ">
-          <h3 className="text-xl font-semibold">Application Later</h3>
-          <p className="mt-2 text-justify ">
-            Students are then required to work on mini/major projects to
-            implement or understand the proof of concepts learned in depth
-            courses.
-          </p>
+
+        {/* Additional T&P Cell Details */}
+        <div className="max-w-5xl p-6 mx-auto bg-white rounded-lg shadow-md">
+          <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+            Key Activities of the T&P Cell
+          </h3>
+          <ul className="space-y-2 text-lg text-gray-700 list-disc list-inside">
+            <li>
+              Collaborates with corporate houses and industries for internships
+              and training programs.
+            </li>
+            <li>
+              Organizes campus interviews, group discussions, and skill
+              development workshops.
+            </li>
+            <li>
+              Provides state-of-the-art infrastructure for placement activities.
+            </li>
+            <li>Focuses on academic and interpersonal skill enhancement.</li>
+            <li>
+              Encourages students to pursue their passion by placing them in
+              organizations of their choice.
+            </li>
+          </ul>
         </div>
-      </div> */}
-    </div>
+      </section>
+    </main>
   );
 };
 

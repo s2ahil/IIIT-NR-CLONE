@@ -22,22 +22,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-screen bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="fixed z-50 w-screen bg-black bg-opacity-60 backdrop-blur-md">
       <div className="max-w-[1550px] flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJiGTSMVoPC-Bcqpx-pLRu4xVWvJs5nwIvQ&s"
+            src="https://www.iiitnr.ac.in/sites/all/themes/iiit/head.png"
             className="h-9"
-            alt="IIIT NR WEBSITE"
+            alt="ilove iiitnr logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            <span className="text-blue-700">I LOVE IIIT–Naya Raipur</span> 
+          <span className="self-center text-2xl font-semibold text-white whitespace-nowrap">
+            <span className="text-lg lg:text-2xl">I LOVE IIIT–Naya Raipur</span>
           </span>
         </a>
         <button
           onClick={toggleNavbar}
           type="button"
-          className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center justify-center w-10 h-10 p-2 text-white rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
           aria-controls="navbar-default"
           aria-expanded={isOpen}
         >
@@ -62,15 +62,15 @@ const Navbar = () => {
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 mt-4 font-medium bg-gray-900 border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <Link
                   href={link.href}
-                  className={`block py-2 px-3 rounded md:p-0 ${
+                  className={`block py-2 px-1 lg:px-3 rounded-md md:p-0 text-white transition-all duration-300 ${
                     pathname === link.href
-                      ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
-                      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                      ? "bg-black md:bg-transparent md:text-black"
+                      : "hover:bg-gray-800 md:hover:bg-transparent md:hover:text-black"
                   }`}
                   aria-current={pathname === link.href ? "page" : undefined}
                   onClick={() => setIsOpen(false)} // Close mobile menu on link click

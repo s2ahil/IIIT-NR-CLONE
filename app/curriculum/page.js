@@ -1,99 +1,107 @@
 import React from "react";
 
+export const metadata = {
+  title: "Curriculum - I Love IIIT Naya Raipur",
+  description:
+    "Explore the unique curriculum at IIIT Naya Raipur. Our innovative programs emphasize hands-on learning, interdisciplinary knowledge, and real-world projects.",
+  keywords:
+    "IIIT Naya Raipur Curriculum, Engineering Education, Hands-on Learning, Interdisciplinary Courses, Modular Curriculum",
+};
+
 const Curriculum = () => {
   return (
-    <div className="p-6">
-    
-
-     
-
-      <main>
-        <h2 className="text-2xl font-semibold">B.Tech Curriculum</h2>
-        <p className="mt-4">
-          DSPM-IIITNR currently runs three undergraduate programs: 
-          <b> B.Tech. in Computer Science & Engineering (CSE)</b>, 
-          <b> B.Tech. in Electronics & Communication Engineering (ECE)</b>, and 
-          <b> B.Tech. in Data Science and Artificial Intelligence (DSAI)</b>. 
-          These credit-based programs are designed to foster core skills alongside innovation and entrepreneurship among students.
-          The dynamic structure of the curriculum aligns with the changing needs of industry and academia. IIIT Naya Raipur follows the Fractal Curriculum.
+    <main className="px-6 py-12 bg-gray-100">
+      <section className="max-w-5xl mx-auto">
+        {/* Page Title */}
+        <h1 className="mb-8 text-4xl font-extrabold text-center text-gray-900">
+          Our Curriculum
+        </h1>
+        <p className="text-lg text-center text-gray-700">
+          The curriculum at IIIT Naya Raipur is designed to equip students with
+          practical skills and a strong theoretical foundation. Explore our
+          innovative education model, interdisciplinary approach, and focus on
+          industry-ready graduates.
         </p>
 
-        <section className="mt-8">
-          <h3 className="text-xl font-semibold">Course Structure</h3>
-          <ul className="list-disc ml-8 mt-4">
-            <li>
-              <b>B.Tech DSAI</b>:
-              <ul className="list-disc ml-8">
-                <li>
-                  <a href="#" className="text-blue-500 hover:underline">
-                    Academic year 2019-2023
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-blue-500 hover:underline">
-                    Academic year 2022-2026
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <b>B.Tech CSE</b>:
-              <ul className="list-disc ml-8">
-                {["2015-2019", "2016-2020", "2017-2021", "2018-2022", "2019-2023", "2022-2026"].map(
-                  (year) => (
-                    <li key={year}>
-                      <a href="#" className="text-blue-500 hover:underline">
-                        Academic year {year}
-                      </a>
-                    </li>
-                  )
-                )}
-              </ul>
-            </li>
-            <li>
-              <b>B.Tech ECE</b>:
-              <ul className="list-disc ml-8">
-                {["2015-2019", "2016-2020", "2017-2021", "2018-2022", "2019-2023", "2022-2026"].map(
-                  (year) => (
-                    <li key={year}>
-                      <a href="#" className="text-blue-500 hover:underline">
-                        Academic year {year}
-                      </a>
-                    </li>
-                  )
-                )}
-              </ul>
-            </li>
-          </ul>
-        </section>
+        {/* Sections */}
+        <div className="mt-12 space-y-12">
+          {/* Semester-wise Curriculum */}
+          <section className="p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="mb-4 text-2xl font-bold text-gray-800">
+              Semester-wise Structure
+            </h2>
+            <ul className="space-y-2 text-gray-700 list-disc list-inside">
+              <li>
+                Year 1: Foundational courses in mathematics, physics, and
+                programming.
+              </li>
+              <li>
+                Year 2: Core subjects like data structures, algorithms, and
+                digital systems.
+              </li>
+              <li>
+                Year 3: Advanced courses in AI, IoT, and software engineering
+                with interdisciplinary electives.
+              </li>
+              <li>
+                Year 4: Capstone projects, internships, and specialized
+                electives in emerging technologies.
+              </li>
+            </ul>
+          </section>
 
-        <section className="mt-8">
-          <h3 className="text-xl font-semibold">Contact</h3>
-          <p className="mt-4">
-            IIIT–Naya Raipur, Plot No. 7, Sector 24, Near Purkhoti Muktangan, Atal Nagar – 493661 Chhattisgarh
-          </p>
-          <p>Tel: (0771) 2474182</p>
-          <p>
-            General Information:{" "}
-            <a href="mailto:iiitnr@iiitnr.ac.in" className="text-blue-500 hover:underline">
-              iiitnr@iiitnr.ac.in
-            </a>
-          </p>
-          <p>
-            Admissions:{" "}
-            <a href="mailto:btech_admissions@iiitnr.ac.in" className="text-blue-500 hover:underline">
-              btech_admissions@iiitnr.ac.in
-            </a>
-          </p>
-        </section>
-      </main>
+          {/* Modular Courses */}
+          <section className="p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="mb-4 text-2xl font-bold text-gray-800">
+              Modular Course Design
+            </h2>
+            <p className="text-gray-700">
+              Each semester is modular, focusing on practical applications and
+              project-based learning. Courses are structured to provide
+              flexibility and depth in emerging domains such as AI, Blockchain,
+              and Cybersecurity.
+            </p>
+          </section>
 
-      <footer className="mt-12 border-t pt-4 text-center">
-        <p>
-          Page last updated on: 16/02/22 | Helpline No: 0771-2474182 (Available on working days between 9:30 am - 6:00 pm)
-        </p>
-      </footer>
-    </div>
+          {/* Skill-first Approach */}
+          <section className="p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="mb-4 text-2xl font-bold text-gray-800">
+              Skill-first Approach
+            </h2>
+            <p className="text-gray-700">
+              Our skill-first approach ensures students gain expertise in tools
+              and technologies that are in high demand. Every semester includes
+              mini-projects to build confidence and industry readiness.
+            </p>
+          </section>
+
+          {/* Interdisciplinary Electives */}
+          <section className="p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="mb-4 text-2xl font-bold text-gray-800">
+              Interdisciplinary Electives
+            </h2>
+            <p className="text-gray-700">
+              Students can choose electives from diverse disciplines such as
+              design, entrepreneurship, and humanities to gain a holistic
+              perspective and expand their career opportunities.
+            </p>
+          </section>
+
+          {/* Capstone Project */}
+          <section className="p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="mb-4 text-2xl font-bold text-gray-800">
+              Capstone Projects
+            </h2>
+            <p className="text-gray-700">
+              The final semester includes a major project where students solve
+              real-world problems, often in collaboration with industry
+              partners. This serves as a launchpad for their professional
+              careers.
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
   );
 };
 
