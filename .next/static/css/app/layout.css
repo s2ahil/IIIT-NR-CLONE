@@ -578,11 +578,11 @@ video {
 .fixed {
   position: fixed;
 }
-.left-1\/2 {
-  left: 50%;
+.bottom-0 {
+  bottom: 0px;
 }
-.top-\[100\%\] {
-  top: 100%;
+.left-0 {
+  left: 0px;
 }
 .mx-auto {
   margin-left: auto;
@@ -679,14 +679,6 @@ video {
 }
 .grow {
   flex-grow: 1;
-}
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.-translate-y-full {
-  --tw-translate-y: -100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .list-inside {
   list-style-position: inside;

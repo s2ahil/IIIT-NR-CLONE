@@ -25,10 +25,9 @@ export default function RootLayout({ children }) {
         <div className="max-w-[1550px] mx-auto px-2 md:px-4 pt-[70px] md:pt-16 ">
           {children}
         </div>
-        <footer className=" fixed  bg-slate-300 min-w-full left-1/2 lg:py-4 py-1   -translate-x-1/2 top-[100%] -translate-y-full  text-center">
+        <footer className=" bg-slate-300 min-w-full left-0 lg:py-4 py-1 bottom-0 text-center">
           <p className="px-2 text-xs font-semibold text-gray-600 lg:text-lg">
-            Disclaimer: This is a Personal Digital Marketing Project for SEO. I
-            Love💗 IIIT Naya Raipur (CG) Copyright Reserved © 2024.
+            Disclaimer: This is a Personal Digital Marketing Project for SEO. I Love💗 IIIT Naya Raipur (CG) Copyright Reserved © 2024.
           </p>
         </footer>
       </body>
