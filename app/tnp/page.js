@@ -6,7 +6,7 @@ import Image from "next/image";
 const TNP = () => {
   return (
     <div>
-      <div className="inline-block">
+      <div className="inline-block mt-8">
         <h1 className="text-3xl font-bold">Training and Placement</h1>
         <hr className="" />
       </div>
@@ -34,17 +34,25 @@ const TNP = () => {
           <hr />
         </div>
         <p className="mt-6 text-justify ">
-          The Training & Placement Office at DSPM IIIT-Naya Raipur is concerned
-          with every activity that enables students to learn and grow outside
-          the Institute campus. On one hand, it collaborates with leading
-          organizations and institutes in setting up internship and training
-          program for the students while on other it enables the placement of
-          students passing out from the Institute. The office liaises with
-          prospective recruiters such as industrial establishments and corporate
-          houses which conduct campus interviews and select students from both
-          disciplines. It provides infra-structural facilities to conduct group
-          discussions, tests, and interviews and other logistics required for
-          the same.
+          The Training & Placement Office at DSPM IIIT-Naya Raipur is worried
+          about every single activity which lets the students learn and grow
+          outside of the campus of the Institute. At one hand it teams with the
+          leading organisations and institutes for the purpose of establishing
+          an internship and a training programme for the students, whereas at
+          the other end, it enables the placement of those students passing out
+          from the Institute. The office liaises with prospective recruiters
+          such as industrial establishments and corporate houses which conduct
+          campus interviews and select students from both disciplines. It
+          provides infra-structural facilities to conduct group discussions,
+          tests, and interviews and other logistics required for the same. The
+          Training and Placement Cell of DSPM IIIT-Naya Raipur strives to get
+          every student trained in the Institute placed in an organization of
+          his or her liking and pursue their passion. To achieve this goal, this
+          office focuses not only on academic skills but also on physical,
+          behavioral, and societal skills required to be a team player in the
+          organization. We nurture our students for four years to develop their
+          all-round abilities so that when they land up in the competitive
+          world, they do not lag behind.
         </p>
         <p className="mt-5 ">
           The Training and Placement Cell of DSPM IIIT-Naya Raipur strives to
@@ -57,7 +65,7 @@ const TNP = () => {
           they do not lag behind.
         </p>
       </div>
-      <div className="mt-4">
+      {/* <div className="mt-4">
         <div className="inline-block">
           <h2 className="text-2xl font-semibold">Why IIIT</h2>
           <hr />
@@ -82,8 +90,8 @@ const TNP = () => {
         <li className="mt-2 font-semibold text-justify">
           Eighth (8) semester dedicated for project work only.
         </li>
-      </div>
-
+      </div> */}
+      {/* 
       <div className="mt-4">
         <div className="inline-block">
           <h2 className="text-2xl font-semibold">Academic Training</h2>
@@ -140,7 +148,7 @@ const TNP = () => {
             courses.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
