@@ -28,7 +28,7 @@ const Navbar = () => {
             alt="IIIT NR WEBSITE"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            <span className="text-blue-700">IIIT NR</span> WEBSITE
+            <span className="text-blue-700">I LOVE IIIT–NR</span> 💀
           </span>
         </a>
         <button

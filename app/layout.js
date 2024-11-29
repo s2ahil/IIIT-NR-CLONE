@@ -6,8 +6,8 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "IIIT NAYA RAIPUR CLONE WEBSITE",
-  description: "clone Website for college students of iiitnr ()  ",
+  title: "I Love IIIT NR - Experience the Best of IIIT Naya Raipur",
+  description: "Discover why everyone says 'I Love IIIT NR'! Explore the dynamic academics, research opportunities, and vibrant campus life of IIIT Naya Raipur.",
 };
 
 export default function RootLayout({ children }) {

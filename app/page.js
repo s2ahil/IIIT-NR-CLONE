@@ -1,30 +1,46 @@
-import React from "react";
-import HeadingWebsite from "@/assets/images/jpg/home/Headingwebsite.jpg"
-import IIITNR from "@/assets/images/jpg/home/iiitnrBuilding.jpg"
+"use client"
+import HeadingWebsite from "@/assets/images/jpg/home/Headingwebsite.jpg";
+import IIITNR from "@/assets/images/jpg/home/iiitnrBuilding.jpg";
 import Image from "next/image";
+
 const Home = () => {
-  return <div>
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="bg-red-400 w-full">
+        <Image
+          src={HeadingWebsite}
+          alt="IIIT NR Official Banner"
+          className="h-[3rem] md:h-full w-full object-cover"
+          priority
+        />
+      </section>
 
+      {/* Welcome Section */}
+      <section className="flex flex-col items-center p-6 text-center">
+        <h1 className="text-3xl font-bold text-gray-800 mb-2">
+          Welcome to the "I Love IIIT NR" Website
+        </h1>
+        <p className="text-lg text-gray-600">
+          Discover why IIIT Naya Raipur is the perfect choice for your academic journey.
+        </p>
+      </section>
 
-    <div className="bg-red-400 w-full">
-
-      <Image src={HeadingWebsite} className="h-[3rem]  md:h-full"></Image>
+      {/* Image and Campus Section */}
+      <section className="w-full flex flex-col items-center px-4">
+        <div className="w-full flex items-center justify-center mb-4">
+          <Image
+            src={IIITNR}
+            alt="IIIT Naya Raipur Campus Building"
+            className="w-full h-auto md:h-[30rem] object-contain"
+          />
+        </div>
+        <p className="text-md text-gray-600">
+          Explore the state-of-the-art facilities, vibrant campus life, and unparalleled learning opportunities at IIIT NR.
+        </p>
+      </section>
     </div>
-
-    <div className="flex items-center flex-col p-3">
-      <div className="text-2xl">Welcome to IIIT NR  clone website</div>
-
-      <p>- Best college for your students</p>
-
-      <div className=" w-full flex items-center justify-center">  <Image src={IIITNR} className=" h-fit  md:h-[30rem] " alt="IIIT NR BUILDING"></Image></div>
-    
-
-    </div>
-
-
-
-
-  </div>
+  );
 };
 
 export default Home;
