@@ -6,16 +6,7 @@ import Image from "next/image";
 const Home = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-red-400 w-full">
-        <Image
-          src={HeadingWebsite}
-          alt="IIIT NR Official Banner"
-          className="h-[3rem] md:h-full w-full object-cover"
-          priority
-        />
-      </section>
-
+ 
       {/* Welcome Section */}
       <section className="flex flex-col items-center p-6 text-center">
         <h1 className="text-3xl font-bold text-gray-800 mb-2">
