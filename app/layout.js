@@ -38,12 +38,18 @@ export default function RootLayout({ children }) {
         <div className="max-w-[1550px] mx-auto px-2 md:px-4 pt-[70px] md:pt-16 mb-10">
           {children}
         </div>
-        <footer className=" fixed  bg-black bg-opacity-60 min-w-full left-1/2 lg:py-4 py-1 backdrop-blur-md   -translate-x-1/2 top-[100%] -translate-y-full  text-center">
-          <p className="px-2 text-xs font-semibold text-white lg:text-lg">
+        <footer className="fixed flex items-center justify-center w-full h-12 -translate-y-full bg-black bg-opacity-60 top-full">
+          <p className="px-2 text-xs font-semibold text-justify text-white xl:text-lg">
             Disclaimer: This is a Personal Digital Marketing Project for SEO. I
             Love💗 IIIT Naya Raipur (CG) Copyright Reserved © 2024.
           </p>
         </footer>
+        {/* <footer className="fixed bg-black bg-opacity-60 z-50 min-w-full left-1/2 lg:py-4 py-1 backdrop-blur-md -translate-x-1/2 top-[100%] -translate-y-full text-center">
+          <p className="px-2 text-xs font-semibold text-white lg:text-lg">
+            Disclaimer: This is a Personal Digital Marketing Project for SEO. I
+            Love💗 IIIT Naya Raipur (CG) Copyright Reserved © 2024.
+          </p>
+        </footer> */}
       </body>
     </html>
   );

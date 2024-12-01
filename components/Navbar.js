@@ -28,10 +28,10 @@ const Navbar = () => {
           <img
             src="https://www.iiitnr.ac.in/sites/all/themes/iiit/head.png"
             className="h-9"
-            alt="ilove iiitnr logo"
+            alt="i love iiitnr logo"
           />
           <span className="self-center text-2xl font-semibold text-white whitespace-nowrap">
-            <span className="text-lg lg:text-2xl">I LOVE IIIT–Naya Raipur</span>
+            <span className="text-lg lg:text-2xl">I Love IIIT Naya Raipur</span>
           </span>
         </a>
         <button
@@ -69,8 +69,8 @@ const Navbar = () => {
                   href={link.href}
                   className={`block py-2 px-1 lg:px-3 rounded-md md:p-0 text-white transition-all duration-300 ${
                     pathname === link.href
-                      ? "bg-black md:bg-transparent md:text-black"
-                      : "hover:bg-gray-800 md:hover:bg-transparent md:hover:text-black"
+                      ? "bg-black md:bg-transparent md:text-red-500"
+                      : "hover:bg-gray-800 md:hover:bg-transparent md:hover:text-red-500"
                   }`}
                   aria-current={pathname === link.href ? "page" : undefined}
                   onClick={() => setIsOpen(false)} // Close mobile menu on link click

@@ -17,10 +17,10 @@ const About = () => {
           About IIIT Naya Raipur
         </h1>
         <p className="text-lg text-center text-gray-700">
-          Discover why IIIT Naya Raipur is a leading destination for students
-          aspiring to shape the future of technology and innovation. From
-          cutting-edge academics to unmatched extracurricular opportunities, we
-          have something for everyone.
+          Discover why iiit nr is a leading destination for students aspiring to
+          shape the future of technology and innovation. From cutting-edge
+          academics to unmatched extracurricular opportunities, we have
+          something for everyone.
         </p>
 
         {/* Sections */}

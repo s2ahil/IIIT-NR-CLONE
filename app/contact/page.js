@@ -22,14 +22,14 @@ const Contact = () => {
         </h1>
         <p className="text-lg text-center text-gray-700">
           We’re here to help and answer any questions you might have. We love
-          IIIT Naya Raipur and look forward to hearing from you!
+          IIITnr and look forward to hearing from you!
         </p>
         <div className="mt-12">
           {/* Address Section */}
           <div className="p-6 bg-white rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800">Address</h2>
             <address className="mt-4 not-italic text-gray-600">
-              IIIT–Naya Raipur
+              IIIT Naya Raipur
               <br />
               Plot No. 7, Sector 24, Near Purkhoti Muktangan,
               <br />

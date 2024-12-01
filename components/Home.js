@@ -12,7 +12,7 @@ const Home = () => {
         {/* Welcome Section */}
         <div className="mb-12 text-center">
           <h1 className="mb-4 text-4xl font-extrabold text-gray-900">
-            Welcome to "I Love IIIT Naya Raipur"
+            Welcome to "i love iiitnr"
           </h1>
           <p className="text-lg text-gray-700">
             Discover why IIIT Naya Raipur is the perfect choice for your
