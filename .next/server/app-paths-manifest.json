@@ -3,5 +3,6 @@
   "/curriculum/page": "app/curriculum/page.js",
   "/tnp/page": "app/tnp/page.js",
   "/patents/page": "app/patents/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/contact/page": "app/contact/page.js"
 }
