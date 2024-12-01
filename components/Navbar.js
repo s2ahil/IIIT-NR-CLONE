@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Import usePathname to track the current route
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // Get the current pathname
+  const pathname = usePathname();
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -17,46 +17,80 @@ const Navbar = () => {
     { name: "Contact", href: "/contact" },
   ];
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isOpen]);
+
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="fixed z-50 w-screen bg-black bg-opacity-60 backdrop-blur-md">
+    <nav className="fixed z-50 w-full bg-black bg-opacity-60 backdrop-blur-md">
       <div className="max-w-[1550px] flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
           <img
             src="https://www.iiitnr.ac.in/sites/all/themes/iiit/head.png"
             className="h-9"
             alt="i love iiitnr logo"
           />
           <span className="self-center text-2xl font-semibold text-white whitespace-nowrap">
-            <span className="text-lg lg:text-2xl">I Love IIIT Naya Raipur</span>
+            <span className="text-lg lg:text-2xl">
+              I <b className="text-red-500">Love</b> IIIT Naya Raipur
+            </span>
           </span>
-        </a>
+        </Link>
         <button
           onClick={toggleNavbar}
           type="button"
-          className="inline-flex items-center justify-center w-10 h-10 p-2 text-white rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          className="inline-flex items-center justify-center w-10 h-10 p-2 text-red-500 rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
           aria-controls="navbar-default"
           aria-expanded={isOpen}
         >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
+          <span className="sr-only">Toggle navigation menu</span>
+          {isOpen ? (
+            <svg
+              className="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              className="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          )}
         </button>
         <div
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
@@ -69,7 +103,7 @@ const Navbar = () => {
                   href={link.href}
                   className={`block py-2 px-1 lg:px-3 rounded-md md:p-0 text-white transition-all duration-300 ${
                     pathname === link.href
-                      ? "bg-black md:bg-transparent md:text-red-500"
+                      ? "bg-red-400 bg-transparent md:bg-transparent md:text-red-500"
                       : "hover:bg-gray-800 md:hover:bg-transparent md:hover:text-red-500"
                   }`}
                   aria-current={pathname === link.href ? "page" : undefined}
