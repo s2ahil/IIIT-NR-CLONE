@@ -15,6 +15,7 @@ const Navbar = () => {
     { name: "T&P Cell", href: "/tnp" },
     { name: "Patents", href: "/patents" },
     { name: "Contact", href: "/contact" },
+    {name:"Show your quirk",href:"/projectShowcase"}
   ];
 
   useEffect(() => {
