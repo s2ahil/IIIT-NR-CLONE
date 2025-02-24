@@ -16,7 +16,7 @@ export const GET = async (req, context) => {
     await client.connect();
 
     // 4. Run your query (replace 'showcaseproject' with your actual table name if needed)
-    const result = await client.query('SELECT title,id,author FROM showcaseproject');
+    const result = await client.query('SELECT title,id,author,tags FROM showcaseproject');
 
     // 5. Return the rows as JSON with a 200 status code
     return new Response(JSON.stringify(result.rows), {

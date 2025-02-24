@@ -33,13 +33,18 @@ const UserData = () => {
     const fetchData = async () => {
       try {
         // Fetch from /api/userData/1 (hard-coded ID for demo)
-        const res = await fetch(`/api/userData/${id}`);
+        const res = await fetch(`/api/userData/${id}`, {
+          // Next.js-specific options
+          next: {
+            revalidate: 60,
+          }
+        });
         if (!res.ok) {
           throw new Error("Failed to fetch data");
         }
         const data = await res.json();
 
-          console.log(data)
+        console.log(data)
         if (Array.isArray(data) && data.length > 0) {
           setProject(data[0]);
         }
@@ -69,31 +74,33 @@ const UserData = () => {
 
   // Display the fetched data
   return (
-    <div className="p-4 flex flex-col gap-4">
-      
+    <div className="p-4  bg-[#F3F4F6]">
 
-      <h2 className="text-2xl font-semibold">{project.title}</h2>
-      <p>
-        <strong>Author:</strong> {project.author}
-      </p>
 
-      {/* Using ReactQuill in read-only mode for the content */}
-      <ReactQuill
-        value={project.content}
-        readOnly={true}
-        modules={quillModules}
-        formats={quillFormats}
-        className="bg-white"
-      />
+      <div className="bg-white p-4 border flex flex-col gap-4">
+        <h2 className="text-2xl font-semibold">{project.title}</h2>
+        <p>
+          <strong>Author:</strong> {project.author}
+        </p>
 
-      <p>
-        <strong>Tags:</strong> {project.tags}
-      </p>
-      
-      <p>
-        <strong>Created at:</strong>{" "}
-        {new Date(project.created_at).toLocaleString()}
-      </p>
+        {/* Using ReactQuill in read-only mode for the content */}
+        <ReactQuill
+          value={project.content}
+          readOnly={true}
+          modules={quillModules}
+          formats={quillFormats}
+          className="bg-white"
+        />
+
+        <p>
+          <strong>Tags:</strong> {project.tags}
+        </p>
+
+        <p>
+          <strong>Created at:</strong>{" "}
+          {new Date(project.created_at).toLocaleString()}
+        </p>
+      </div>
     </div>
   );
 };

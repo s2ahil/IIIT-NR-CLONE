@@ -1,10 +1,6 @@
 {
-  "/page": "app/page.js",
   "/projectShowcase/page": "app/projectShowcase/page.js",
-  "/about/page": "app/about/page.js",
-  "/tnp/page": "app/tnp/page.js",
   "/user/[id]/page": "app/user/[id]/page.js",
-  "/api/userData/[id]/route": "app/api/userData/[id]/route.js",
-  "/api/get/projects/route": "app/api/get/projects/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/createProject/page": "app/createProject/page.js",
+  "/api/get/projects/route": "app/api/get/projects/route.js"
 }
