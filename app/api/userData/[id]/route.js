@@ -2,6 +2,8 @@ import { Client } from 'pg';
 import { dburl } from '@/constants/dbUrl';
 
 export const GET = async (req, context) => {
+
+  console.log("reached user data")
   // Extract the "id" parameter from the URL
   const { id } = context.params
   if (!id) {

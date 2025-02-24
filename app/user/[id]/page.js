@@ -35,9 +35,7 @@ const UserData = () => {
         // Fetch from /api/userData/1 (hard-coded ID for demo)
         const res = await fetch(`/api/userData/${id}`, {
           // Next.js-specific options
-          next: {
-            revalidate: 60,
-          }
+        
         });
         if (!res.ok) {
           throw new Error("Failed to fetch data");
