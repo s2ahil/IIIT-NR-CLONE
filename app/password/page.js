@@ -7,6 +7,9 @@ import Cookies from "js-cookie";
 export default function PasswordPage() {
   const [passwordInput, setPasswordInput] = useState("");
   const router = useRouter();
+
+
+  console.log(process.env.NEXT_PUBLIC_AUTH_PASSWORD)
   
   const checkPassword = () => {
  

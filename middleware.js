@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export function middleware(req) {
   const password = process.env.NEXT_PUBLIC_AUTH_PASSWORD; // Get password from environment
   const cookies = req.cookies.get("auth");
-
+  console.log(process.env.NEXT_PUBLIC_AUTH_PASSWORD)
   if (cookies?.value === password) {
     return NextResponse.next(); // Allow access
   }
