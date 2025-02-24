@@ -2,5 +2,6 @@
   "/projectShowcase/page": "app/projectShowcase/page.js",
   "/user/[id]/page": "app/user/[id]/page.js",
   "/createProject/page": "app/createProject/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/api/get/projects/route": "app/api/get/projects/route.js"
 }
