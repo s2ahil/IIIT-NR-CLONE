@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+export const dynamic = 'force-dynamic';
 const ManageProject = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
