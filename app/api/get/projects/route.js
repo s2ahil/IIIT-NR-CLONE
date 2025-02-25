@@ -2,6 +2,8 @@
 import { Client } from 'pg';
 import { dburl } from '@/constants/dbUrl';
 
+
+export const dynamic = 'force-dynamic';
 export const GET = async (req, context) => {
   // 1. Get the DB URL from environment variables (or imported constant)
   const url = dburl;
