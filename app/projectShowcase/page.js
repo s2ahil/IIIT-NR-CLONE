@@ -10,6 +10,9 @@ const ProjectShowcase = () => {
     const fetchTitles = async () => {
       try {
         const res = await fetch("/api/get/projects"
+                                {
+    cache:"no-cache"
+  }
         );
         if (!res.ok) {
           throw new Error("Failed to fetch data");
