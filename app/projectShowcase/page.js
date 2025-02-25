@@ -2,6 +2,9 @@
 import ProjectsCards from "@/components/ProjectsCards";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+
+export const dynamic = 'force-dynamic';
+
 const ProjectShowcase = () => {
   const [titles, setTitles] = useState([]);
   const [loading, setLoading] = useState(true);
