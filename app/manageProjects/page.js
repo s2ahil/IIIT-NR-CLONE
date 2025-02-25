@@ -8,8 +8,7 @@ const ManageProject = () => {
     // Function to fetch all projects
     const fetchProjects = async () => {
         try {
-            const res = await fetch("/api/get/projects",{
-    cache:"no-cache"
+            const res = await fetch("/api/get/projects",{ cache: 'no-store'
   });
             if (!res.ok) {
                 throw new Error("Failed to fetch projects");
