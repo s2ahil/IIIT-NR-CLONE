@@ -9,7 +9,7 @@ const ProjectShowcase = () => {
   useEffect(() => {
     const fetchTitles = async () => {
       try {
-        const res = await fetch("/api/get/projects"
+        const res = await fetch("/api/get/projects",
                                 {
     cache:"no-cache"
   }
