@@ -10,8 +10,7 @@ const ProjectShowcase = () => {
     const fetchTitles = async () => {
       try {
         const res = await fetch("/api/get/projects",
-                                {
-    cache:"no-cache"
+                           { cache: 'no-store'
   }
         );
         if (!res.ok) {
